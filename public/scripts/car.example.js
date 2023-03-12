@@ -21,6 +21,7 @@ class Car {
     options,
     specs,
     availableAt,
+    typeDriver
   }) {
     this.id = id;
     this.plate = plate;
@@ -37,16 +38,70 @@ class Car {
     this.options = options;
     this.specs = specs;
     this.availableAt = availableAt;
+    this.typeDriver = typeDriver;
   }
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
-    `;
+    <div class="container">
+          <div class="row mt-4 g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <img class="img-fluid" src="${this.image}" alt="${this.manufacture}">
+                  <h4><b>${this.manufacture}</b> (<b>${this.model}</b>)</h4>
+                  <h3><b>Rp. ${this.rentPerDay} / Hari</b></h3>
+                  <p>Plat Nomer: <b>${this.plate}</b></p>
+                  <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                  <p><b>${this.description}</b></p>
+                  <p>Kapasitas : <b>${this.capacity}</b></p>
+                  <p>Transmisi : <b>${this.transmission}</b></p>
+                  <p>Tahun : <b>${this.year}</b></p>
+                  
+                  <button class="btn-fluid btn btn-success">
+                  Pilih Mobil
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <img class="img-fluid" src="${this.image}" alt="${this.manufacture}">
+                  <h4><b>${this.manufacture}</b> (<b>${this.model}</b>)</h4>
+                  <h3><b>Rp. ${this.rentPerDay} / Hari</b></h3>
+                  <p>Plat Nomer: <b>${this.plate}</b></p>
+                  <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                  <p><b>${this.description}</b></p>
+                  <p>Kapasitas : <b>${this.capacity}</b></p>
+                  <p>Transmisi : <b>${this.transmission}</b></p>
+                  <p>Tahun : <b>${this.year}</b></p>
+                  
+                  <button class="btn-fluid btn btn-success">
+                  Pilih Mobil
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <img class="img-fluid" src="${this.image}" alt="${this.manufacture}">
+                  <h4><b>${this.manufacture}</b> (<b>${this.model}</b>)</h4>
+                  <h3><b>Rp. ${this.rentPerDay} / Hari</b></h3>
+                  <p>Plat Nomer: <b>${this.plate}</b></p>
+                  <p>Tipe Driver: <b>${this.typeDriver}</b></p>
+                  <p><b>${this.description}</b></p>
+                  <p>Kapasitas : <b>${this.capacity}</b></p>
+                  <p>Transmisi : <b>${this.transmission}</b></p>
+                  <p>Tahun : <b>${this.year}</b></p>
+                  <button class="btn-fluid btn btn-success">
+                  Pilih Mobil
+                  </button>
+                </div>
+              </div>
+            </div>
+    </div>`;
   }
 }

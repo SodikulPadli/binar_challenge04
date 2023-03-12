@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-REZbTtZ/wzeVJjymy3qhxY7QRv1N55hhN8+OZG/RDR1Ur/yw/5I+Pmlzmqhvx0Yf7o2s19GmW8VZ1TtTbPOVw==" crossorigin="anonymous" />
+    <title>Binar Car Rental</title>
+  </head>
+  <body>
+<!-- Awal Navbar -->
+<header id="home">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container sticky-top ">
+    <a class="navbar-brand" href="#home"><img src="assets/img/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end " id="navbarNavAltMarkup">
+      <div class="navbar-nav fw-bold" >
+        <a class="nav-link px-3" aria-current="page" href="#our-services">Our Services</a>
+        <a class="nav-link px-3" href="#why-us">Why Us</a>
+        <a class="nav-link px-3" href="#testimonial">Testimonial</a>
+        <a class="nav-link px-3" href="#faq">FAQ</a>
+        <a class="btn btn-green" href="#">Register</a>
+      </div>
+    </div>
+  </div>
+  </div>
+</nav>
+</header>
+<!-- Akhir Navbar -->
+
+<!-- Awal Banner 1 -->
+<section id="banner">
+  <div class="container-fulid tablet-screen p-lg-0">
+      <div class="ps-3 pt-3 judul ms-lg-5 ps-lg-5 ">
+        <h1 class="fw-bold  ">Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h1>
+        <p class="pt-3 px-1">Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.</p>
+        <a class="btn btn-green" id="mulaiSewa">Mulai Sewa Mobil</a>
+      </div>
+      <div class="ps-3 pt-3 banner-1 p-lg-0 text-lg-end pt-lg-5">
+          <img src="assets/img/img_car.png" class="img-car ms-lg-0 " alt="">
+      </div>
+      <span><i class="fa-light fa-clock"></i></span>
+    </div>
+  </div>
+</section>
+<!-- Akhir Banner 1 -->
+
+ <!-- Awal Form Cari Mobil -->
+<section id="showInputFilter" style="position:relative;">
+<div style="display: flex;justify-content:space-around;align-items: center; width: 80%; background-color:white;margin:0 auto; padding: 20px;border-radius: 20px;margin-top: -30px;box-shadow: 1px 1px 1px 1px black;">
+  <div>
+    <label>Tipe Driver</label><br/>
+    <select id="tipeDriver">
+      <option value="">Pilih Tipe Driver</option>
+      <option value="Dengan Supir">Dengan Supir</option>
+      <option value="Lepas Kunci">Tanpa Supir (Lepas Kunci)</option>
+    </select>
+  </div>
+  <div>
+    <label>Tanggal</label><br/>
+    <input id="tanggal" type="date" placeholder="Pilih Tanggal">
+  </div>
+  <div>
+    <label>Waktu Jemput</label><br/>
+     <input id="waktu" type="time" placeholder="Jumlah Penumpang">
+    <!-- <select id="waktu" >
+       <option value="">Pilih Waktu</option>
+       <option value="08">08.00 WIB</option>
+       <option value="09">09.00 WIB</option>
+       <option value="10">10.00 WIB</option>
+       <option value="11">11.00 WIB</option>
+       <option value="12">12.00 WIB</option>
+       
+    </select>  -->
+  </div>
+  <div>
+    <label>Jumlah Penumpang (optional)</label><br/>
+    <input id="penumpang" type="text" placeholder="Jumlah Penumpang">
+  </div>
+  <div>
+    <button id="filterMobil" style="background-color:#5CB85F;color: white; border-radius: 5px; padding: 10px;">Cari Mobil</button>
+  </div>
+</div>
+</section>
+<!-- Akhir Form Cari Mobil -->
+
+<!-- Awal Card List Mobil -->
+<section id="cars-container"></section>
+<!-- Akhir Card List Mobil -->
+
+<!-- Awal Footer -->
+<footer id="footer" class="mt-5">
+  <div class="container py-5">
+    <div class="row">
+    <div class="col-lg-3">
+      <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+      <p>binarcarrental@gmail.com</p>
+      <p>081-233-334-808</p>
+    </div>
+    <div class="col-lg-3 fw-bold">
+      <a href="#our-services">Our services</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonial">Testimonial</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="col-lg-3">
+      <p>Connect with us</p>
+      <span class="pe-2"><img src="assets/img/icon_facebook.png" alt=""></span>
+      <span class="pe-2"><img src="assets/img/icon_instagram.png" alt=""></span>
+      <span class="pe-2"><img src="assets/img/icon_twitter.png" alt=""></span>
+      <span class="pe-2"><img src="assets/img/icon_mail.png" alt=""></span>
+      <span class="pe-2"><img src="assets/img/icon_twitch.png" alt=""></span>
+    </div>
+    <div class="col-lg-3 pt-2">
+      <p>Copyright Binar 2022</p>
+      <div>
+         <a class="navbar-brand" href="#home"><img src="assets/img/logo.png" alt=""></a>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+</footer>
+<!-- Akhir Footer -->
+    <script src="assets/js/bootstrap.bundle.min.js" ></script>
+
+    <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-size:14px;
+}
+/* header */
+
+.navbar, #banner{
+    background-color:#F1F3FF;
+}
+
+.btn-green{
+    background-color: #5CB85F;
+    color:#fff;
+}
+
+/* Banner 1 */
+#banner .row{
+    padding-left: 10%;
+    overflow: hidden ;
+}
+.img-car{
+max-width: 100%;
+}
+
+/* our-services */
+#our-services ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#our-services li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* Why-Us */
+.item-why-us{
+    max-height: 200px;
+    overflow:hidden;
+}
+
+/* testimonal */
+.bg-testimonial{
+    background-color: #F1F3FF;
+}
+
+.card-banner{
+    background-color:#0D28A6;
+
+}
+
+/* swiper css */
+.carousel-wrapper{
+    overflow: hidden;
+}
+.swiper-slide .card{
+    background-color:#F1F3FF;
+ ;
+}
+.swiper-container {
+    width: 50%;
+    height: 100%;
+    overflow: visible;
+    margin: 0 auto;
+}
+.swiper-navigation .swiper-prev, .swiper-navigation .swiper-next {
+max-width:50px;    
+border-radius:100%;
+border: 0;
+padding: 10px;
+}
+
+.swiper-prev:hover,.swiper-next:hover{
+    background-color: #5CB85F;
+}
+
+@media screen and (max-width: 768px) {
+    .swiper-container {
+        width: 80%;
+    }
+}
+
+/* footer */
+#footer a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 576px) { 
+    div.judul{
+    margin-left: 3%;
+    }
+ }
+
+ @media screen and (min-width: 601px) { 
+    div.judul{
+    margin: auto;
+    width: 80%;
+    }
+    
+    .banner-1 img{
+        width: 90%;
+        margin-left: 65px;
+    }
+ }
+@media screen and (min-width: 701px) { 
+    div.judul{
+    margin: auto;
+    width: 70%;
+    }
+    
+    .banner-1 img{
+        width: 90%;
+        margin-left: 75px;
+    }
+ }
+@media screen and (min-width: 768px) { 
+    .tablet-screen{
+        display: flex;
+        padding: 20px;
+    }
+    .banner-1{
+        padding: 10px;
+    }
+ }
+@media screen and (min-width: 801px) { 
+    div.judul{
+    margin-left:5%;
+    width: 60%;
+    }
+    
+ }
+ @media screen and (min-width: 901px) { 
+    div.judul{
+    margin-left:10%;
+    width: 60%;
+    }
+    
+ }

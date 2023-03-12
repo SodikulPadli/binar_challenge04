@@ -11,9 +11,12 @@ class Binar {
       const timeAt = new Date();
       const mutator = getRandomInt(1000000, 100000000);
       const availableAt = new Date(timeAt.getTime() + (isPositive ? mutator : -1 * mutator))
-
+      const typeDriver = isPositive ? 'Lepas Kunci' : 'Dengan Supir'
+      const capacity = getRandomInt(2, 8)
       return {
         ...car,
+        capacity,
+        typeDriver,
         availableAt,
       };
     })
